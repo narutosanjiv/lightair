@@ -4,20 +4,18 @@ source "https://rubygems.org"
 # Bundler will treat runtime dependencies like base dependencies, and
 # development dependencies will be added by default to the :development group.
 gemspec
-ruby '2.2.4'
+ruby '2.3.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 
 # Use google_drive to read/write files or spreadsheets from google drive
 gem 'omniauth-google-oauth2'
-gem 'google-api-client', require: 'google/api_client' 
+gem 'google-api-client', require: 'google/api_client'
 gem 'google_drive', git: 'git://github.com/SixiS/google-drive-ruby'
 
 # Use sendrid to access sendgrid api to send mails and get their status
 gem 'sendgrid'
 
 # Use mongoid to utilise mongodb
-gem 'mongoid'
-
 # The following gems for testing purpose in development and testing environment
 group :development, :test do
   # Rspec is used to write the test cases
@@ -39,7 +37,7 @@ group :test do
   gem 'vcr'
 end
 
-gem 'simple_form'
+gem 'simple_form', github: 'plataformatec/simple_form'
 # Use to add redactor editor
 gem 'redactor-rails'
 gem 'carrierwave'
@@ -51,11 +49,11 @@ gem 'mina'
 gem 'mina_extensions'
 gem 'rest_client'
 gem 'pry'
-gem 'select2-rails'
-gem 'sinatra', '>=1.3.0', :require => nil
+#gem 'select2-rails'
+gem 'sinatra', '>= 2.0.0.beta2', :require => nil
 gem 'therubyracer'
 gem 'sendgrid_toolkit'
-gem 'mongoid_slug'
+gem 'mongoid-slug', github: 'mongoid/mongoid-slug'
 # Declare any dependencies that are still in development here instead of in
 # your gemspec. These might include edge Rails or gems from your path or
 # Git. Remember to move these dependencies to your gemspec before releasing
@@ -67,3 +65,10 @@ gem "mongoid-paperclip", :require => "mongoid_paperclip"
 gem 'imgkit'
 
 gem 'responders', '~> 2.0'
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-bootstrap-sass', '3.2.0'
+  gem 'rails-assets-bootstrap-datepicker', '1.5.0'
+  gem 'rails-assets-select2', '3.5.0'
+  gem 'rails-assets-select2-bootstrap3-css', '1.4.6'
+end

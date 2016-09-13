@@ -17,25 +17,23 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["spec/**/*"]
 
-  s.add_dependency "rails", "~> 4.2.0"
-  s.add_dependency 'sass-rails', '~> 4.0.3'
+  s.add_dependency "rails", "~> 5.0.0"
+  s.add_dependency 'sass-rails', '~> 5.0.6'
   s.add_dependency 'haml'
   s.add_dependency 'haml-rails'
   s.add_dependency 'uglifier', '>= 1.3.0'
-  s.add_dependency 'coffee-rails', '~> 4.0.0'
+  s.add_dependency 'coffee-rails', '~> 4.2.1'
   s.add_dependency 'jquery-rails'
   s.add_dependency 'turbolinks'
   s.add_dependency 'jbuilder', '~> 2.0'
   s.add_dependency 'spring'
   s.add_dependency 'omniauth-google-oauth2'
   s.add_dependency 'google-api-client'
-  s.add_dependency 'google_drive' 
+  s.add_dependency 'google_drive'
   s.add_dependency 'sendgrid'
   s.add_dependency 'sidekiq'
-  s.add_dependency 'mongoid'
+  s.add_dependency 'mongoid', '~> 6.0.0.beta'
   s.add_dependency 'devise_invitable'
-  s.add_dependency 'bootstrap-sass'
-  s.add_dependency 'bootstrap-datepicker-rails'
   s.add_dependency 'simple_form'
   s.add_dependency 'redactor-rails'
   s.add_dependency 'carrierwave'
@@ -44,7 +42,6 @@ Gem::Specification.new do |s|
   s.add_dependency 'redis-rails'
   s.add_dependency 'redis-namespace'
   s.add_dependency 'rest_client'
-  s.add_dependency 'select2-rails'
   s.add_dependency 'sendgrid_toolkit'
-  
+
 end
