@@ -2,9 +2,9 @@ source 'https://rubygems.org'
 
 ruby '2.1.2'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.2'
+gem 'rails', '7.0.0'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.3'
+gem 'sass-rails', '~> 6.0.0'
 
 gem 'haml'
 
@@ -20,7 +20,7 @@ gem 'therubyracer',  platforms: :ruby
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+gem 'turbolinks', '>= 5.0.0'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
@@ -103,5 +103,5 @@ gem 'mina_extensions'
 gem 'rest_client'
 gem 'pry'
 gem 'select2-rails'
-gem 'sinatra', '>=1.3.0', :require => nil
+gem 'sinatra', '>= 4.0.0', :require => nil
 
