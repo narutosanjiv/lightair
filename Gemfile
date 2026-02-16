@@ -42,8 +42,8 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 # Use google_drive to read/write files or spreadsheets from google drive
-gem 'omniauth-google-oauth2'
-gem 'google-api-client', require: 'google/api_client' 
+gem 'omniauth-google-oauth2', '>= 0.2.6'
+gem 'google-api-client', '>= 0.9', require: 'google/api_client'
 gem 'google_drive', git: 'git://github.com/SixiS/google-drive-ruby'
 
 # Use linkedin to interface with linkedin api
@@ -60,7 +60,7 @@ gem 'sidekiq'
 gem 'devise'
 
 # Use mongoid to utilise mongodb
-gem 'mongoid'
+gem 'mongoid', '>= 7.6.1'
 
 # Use devise_invitable to give authentication to only invited users
 gem 'devise_invitable'
@@ -94,7 +94,7 @@ gem 'simple_form'
 # Use to add redactor editor
 gem 'redactor-rails'
 gem 'carrierwave'
-gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'
+gem 'carrierwave-mongoid', '>= 1.1.0', :require => 'carrierwave/mongoid'
 gem 'mini_magick'
 gem 'redis-rails'
 gem 'redis-namespace'
